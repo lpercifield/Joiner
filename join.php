@@ -58,18 +58,6 @@
 		);
 
 		
-/*
-		$user = array(
-		
-				'$push' => array(
-						
-						"members" => $userNumber
-				
-				 )
-		
-		);
-*/
-		
 		
 		$user = array(
 		

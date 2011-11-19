@@ -86,6 +86,16 @@
 						foreach($results as $join){
 						
 							$members = $join['members'];
+							$group_id = $join['_id'];
+							$groupLength = strlen($join["group"]);
+							
+							$log = "this is the group id ".$group_id;
+							
+							error_log($log);
+							
+							$storemessage = substr($message, $groupLength);
+							
+							logSMS($group_id, $storemessage);
 							
 							foreach($members as $member){
 							
